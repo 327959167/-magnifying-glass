@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  width: 1249.5px;
+  /* width: 1249.5px; */
   border: 1px solid #ecf0f1;
   position: relative;
 }

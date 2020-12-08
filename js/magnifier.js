@@ -18,6 +18,18 @@ const move = document.querySelector('.move');
 // 获取大图
 const bigImg = document.querySelector('.move img')
 
+// 设置放大镜的兼容性
+const containerWidth = bigImg.offsetWidth / 2;
+container.style.width = containerWidth + 'px';
+
+// 鼠标移入显示，移出隐藏
+container.addEventListener('mouseover', () => {
+  move.style.display = 'block';
+})
+container.addEventListener('mouseout', () => {
+  move.style.display = 'none';
+})
+
 // 放大镜跟随鼠标移动事件
 container.addEventListener('mousemove', e => {
   // x轴
